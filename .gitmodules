@@ -1,0 +1,3 @@
+[submodule "squick"]
+	path = squick
+	url = https://github.com/addilyz/squick
