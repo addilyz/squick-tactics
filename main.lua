@@ -1,0 +1,1 @@
+require "squick/squick"
