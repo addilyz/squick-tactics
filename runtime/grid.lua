@@ -72,6 +72,21 @@ function qv.buildPoly(arrayIndices,sourceOverride,overrideTarget)
 	return t
 end
 
+function field:mkPoly() -- TOOL ORIENTED FUNCTION
+	self.arrayIndex = qv.newArray()
+	qv.setArray(self.arrayIndex)
+	local tile = {}
+	local tw = self.settings.tileWidth
+	local tl = self.settings.tileLength
+	for x = 1, self.mathyGrid, 1 do
+		for y = 1, self.mathyGrid[x] do
+			if self.mathyGrid[x][y] then
+				
+			end
+		end
+	end
+end
+
 function field:polygonPrep()
 	for y = 1, #self, 1 do
 		for x = 1, #self[y], 1 do
