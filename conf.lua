@@ -1,6 +1,6 @@
 
 function love.conf(t)
-	t.identity = "squick"
+	t.identity = "squick-tactics"
 	t.appendidentity = true
 	t.console = true
 	t.version = "11.5"
