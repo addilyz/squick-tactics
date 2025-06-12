@@ -1,6 +1,3 @@
 local t = {}
-t.SPLASHES_PRESHRED = {}
-t["SPLASHES_PRESHRED"]["lib"] = "slides"
-t["SPLASHES_PRESHRED"]["ident"] = "love2d-community-splashes"
-t["SPLASHES_PRESHRED"]["dir"] = "cache/SPLASHES_PRESHRED"
+
 return t
