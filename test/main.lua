@@ -34,12 +34,18 @@ function love.update(dt)
 	dtc = 0
     end
 end
-local name = "recording.gif"
-function love.keypressed(k)
-	if k == "escape" then
-		os.execute( "ffmpeg -i " .. love.filesystem.getSaveDirectory() .. "/recording/%012d.png " .. name )
-		love.event.quit()
+
+local nS = "example"
+local nF = ".gif"
+function recorder.compile(dest)os.execute( "ffmpeg -i " .. love.filesystem.getSaveDirectory() .. "/recording/%012d.png " .. name )
+	if love.filesystem.exists(dest..nS..) then
+		noTarget = true
+		nI = 1
+		while noTarget do
+			if love.
+		end
 	end
+	os.execute( "ffmpeg -i " .. love.filesystem.getSaveDirectory() .. "/recording/%012d.png " .. name )
 end
 
 function love.draw()
