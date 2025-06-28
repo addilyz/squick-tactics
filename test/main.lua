@@ -37,12 +37,17 @@ end
 
 local nS = "example"
 local nF = ".gif"
-function recorder.compile(dest)os.execute( "ffmpeg -i " .. love.filesystem.getSaveDirectory() .. "/recording/%012d.png " .. name )
+function recorder.compile(dest)
 	if love.filesystem.exists(dest..nS..) then
 		noTarget = true
 		nI = 1
 		while noTarget do
-			if love.
+			if love.filesystem.exists(dest..nS..tostring(nI)..nF) then
+				nI = nI + 1
+			else
+				name = dest..nS..tostring(nI)..nF
+				noTarget = false
+			end
 		end
 	end
 	os.execute( "ffmpeg -i " .. love.filesystem.getSaveDirectory() .. "/recording/%012d.png " .. name )
